@@ -87,8 +87,6 @@ void loop() {
   bool sum3 = FullAdderSum(x3, y3, curry2);
   bool curry3 = FullAdderCurry(x3, y3, curry2);
 
-  Serial.print(sum1);
-  
   digitalWrite(R0, sum0);
   digitalWrite(R1, sum1);
   digitalWrite(R2, sum2);
