@@ -16,7 +16,6 @@ void my_delay_ms(int ms){
 
 void generate_tone(float frequency, float duration){
      int total_cycles = duration * frequency / 1000;
-
      for(int i = 0; i < total_cycles; i++){
         my_delay_ms(1000 / (2 * frequency));
         BUZZER_PORT = BUZZER_PORT | (1 << BUZZER_PIN);
